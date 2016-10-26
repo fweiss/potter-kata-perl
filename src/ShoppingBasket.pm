@@ -2,13 +2,22 @@ package ShoppingBasket;
 
 sub new() {
     my $class = shift;
-    my $self = {};
+    my $self = {
+        items => []
+    };
     bless $self, $class;
     return $self;
 }
 
 sub getTotal() {
-    return 0.00;
+    my ($self) = @_;
+#    return 0.00 * ${$self->{items}};
+    return 8.00 * (scalar @{$self->{items}});
+}
+
+sub addBook() {
+    my ($self, $book) = @_;
+    push(@{$self->{items}}, $book);
 }
 
 1;
