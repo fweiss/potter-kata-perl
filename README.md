@@ -1,20 +1,22 @@
-# Potter Kata written in Perl with TDD.
+# Potter Kata written in Perl with TDD
+
+This is an excercise and example of using TDD with Perl.
 
 ## Running the tests
 
 To run the tests on Mac/Linux:
 
-```./test.sh```
+``./test.sh``
 
 To run the tests on Windows:
 
-```test.bat```
+``test.bat``
 
 ## Installation
 
 ### Mac
 
-```sudo cpan Test::Class```
+``sudo cpan Test::Class``
 
 ### Windows
 

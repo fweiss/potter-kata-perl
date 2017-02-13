@@ -1,3 +1,4 @@
+# example using Test::More instead of Test::Class
 use Test::More;
 
 use ShoppingBasket;
