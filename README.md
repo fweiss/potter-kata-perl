@@ -1,6 +1,6 @@
 # Potter Kata written in Perl with TDD
 
-This is an excercise and example of using TDD with Perl.
+This is an exercise and example of using TDD with Perl.
 
 ## Running the tests
 
