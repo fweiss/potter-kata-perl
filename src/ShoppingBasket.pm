@@ -11,7 +11,6 @@ sub new() {
 
 sub getTotal() {
     my ($self) = @_;
-#    return 0.00 * ${$self->{items}};
     return 8.00 * (scalar @{$self->{items}});
 }
 
