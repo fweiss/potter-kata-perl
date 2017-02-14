@@ -12,9 +12,13 @@ sub my_test : Test(startup => 2) {
     can_ok('ShoppingBasket', 'new');
 }
 
-sub setup : Test(setup => 3) {
+sub setup : Test(setup) {
     my ($self) = @_;
     $self->{basket} = ShoppingBasket->new();
+}
+
+sub constructor : Test(3) {
+    my ($self) = @_;
     isa_ok($self->{basket}, 'ShoppingBasket');
     can_ok($self->{basket}, 'getTotal');
     can_ok($self->{basket}, 'addBook');
